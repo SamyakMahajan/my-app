@@ -4,7 +4,7 @@ import axios from 'axios'
 function Home() {
     const [products, setProducts]=useState([])
     useEffect(() => {
-        axios.get('http://localhost:3001/get')
+        axios.get('https://ph726.azurewebsites.net/get')
         .then(result=> setProducts(result.data))
         .catch(err=> console.log(err))
     },[])

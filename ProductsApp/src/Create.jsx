@@ -4,7 +4,7 @@ const Create = () => {
     const [name,setName]=useState()
 
     const handleAdd=()=>{
-        axios.post('http://localhost:3001/add',{name}).then(result=> location.reload())
+        axios.post('https://ph726.azurewebsites.net/add',{name}).then(result=> location.reload())
         .catch(err=> console.error(err))
     }
     return (
